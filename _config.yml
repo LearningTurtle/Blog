@@ -18,7 +18,7 @@ texture:
   title: Learning Turtle
   tagline: Creator . Learner . Educator 
   date_format: "%b %-d, %Y"
-  style: greenturtle
+  style: greent
   search: false
   showNav: true
   showPicker: false
