@@ -25,7 +25,7 @@ texture:
   disqus_shortname: games
   navigation:
     - title: home
-      url: "/"
+      url: "/Blog"
     - title: About us
       url: "/about.md"
   markdown: kramdown
@@ -34,8 +34,8 @@ texture:
 # - about.md
   # generate social links in footer
   social_links:
-    twitter: thelehhman
-    github:  thelehhman
+    twitter:
+    github: https://github.com/LearningTurtle 
 #    linkedIn: in/thelehhman
     rss: rss
  
