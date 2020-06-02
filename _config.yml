@@ -1,6 +1,6 @@
 title: Home
 author: Learning Turtle
-email: iamtejasvaidhya@gmail.com
+email: learningturtle.yt@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -16,7 +16,7 @@ sass:
 permalink: /posts/:title/
 texture:
   title: Learning Turtle
-  tagline: Creator . Learner . Educator 
+  tagline: Slow and steady wins the race 
   date_format: "%b %-d, %Y"
   style: red
   search: false
