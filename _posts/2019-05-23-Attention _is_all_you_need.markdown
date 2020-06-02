@@ -25,3 +25,21 @@ In machine learning we often think of "information" as feature vectors. For a gi
 A database is used to store data so that search queries can be used to efficiently retrieve the information from it. For example, Arxiv is a database of articles which allows us to query over it so that we can find relevant articles.
 
 Analogously, an image can be thought of as information-rich source (database) and the question as the query. The attention mechanism will be similar to an information retrieval method that will allow us to find out the relevant regions of the image based on the question.
+
+### Key, Query and Value
+
+Information in a database is often stored as the pair $$key$$, $$value$$ for example title + abstract and the article in Arxiv. Similarity or correlation between the query and each of the keys is found to determine the relevance of corresponding values. 
+
+Taking inspiration from database management systems, the concept of key, query and values was introduced for attention mechanisms is the paper Attention is all you need. For feature vectors like that of image regions where $$key$$ and the $$value$$ can not be explicitly seen, the feature vectors are usually transformed using a fully-connected layer to obtain the $$keys$$ and the $$values$$.
+
+<p align="center">
+  <img width="750" height="370" src="https://raw.githubusercontent.com/LearningTurtle/Blog/master/assets/images/attention_information.png">
+</p>
+
+It is worth mentioning that the feature vectors are not always projected into key, query and values and are used directly sometimes. However, in this blog, we shall assume that the feature vectors are projected into key, query and values since not projecting is equivalent to learning an identity projection.
+
+## Categorisation of Attention
+
+<p align="center">
+  <img width="750" height="370" src="https://raw.githubusercontent.com/LearningTurtle/Blog/master/assets/images/attention_categorisation.png">
+</p>
