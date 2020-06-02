@@ -1,20 +1,27 @@
 ---
 layout: post
-title:  "Attention is all you need"
-date:   2019-05-23 21:03:36 +0530
+title:  "Attention? An Intuitive Explanation"
+date:   2020-06-02 15:03:36 +0530
 ---
-Description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 
-![texture theme preview](https://images.unsplash.com/photo-1500322969630-a26ab6eb64cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80)
+Attention based mechanisms have become quite popular in the field of machine learning. From 3D-Pose Estimation to question answering attention mechanisms have been found quite useful. Let's dive right into what is attention and how has it become such a popular concept in machine learning.
 
-Here, have some $$\pi$$.
+"Pay attention, it's an important chapter." Ring some bells? We have always been asked to focus on the important part whether it is an examination or a speech. Similar is the concept of attention in machine learning, focussing on the important part. Let's consider a problem -- you are given the following image and asked the question "What is the color of the shirt, the person kicking the ball is wearing?"
 
-The greatest equation known to man is: 
+<p align="center">
+  <img width="650" height="450" src="/assets/images/football.jpg">
+</p>
 
-$$e^{ix} = \cos{x} + i\sin{x}$$
+You would realize that there are a bunch of regions in the image that are more important to put focus on to answer the question, like shown in the following image. 
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+<p align="center">
+  <img width="850" height="600" src="/assets/images/football_imp.png">
+</p>
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+In machine learning we often think of "information" as feature vectors. For a given bunch of feature vectors, attention mechanisms allow us to determine which feature vectors are more relevant to a particular feature vector. The relevance between two vectors can be found using several methods as we later see in this blog. In the mentioned example, if $$q$$ represents the feature vector for the question and $$v_i$$ represent the feature vectors for each of the region $$i$$ in the image, the attention mechanism might help us to determine which regions are more relevant to $$q$$.
+
+## Attention Mechanisms as Information Retrieval Methods
+
+A database is used to store data so that search queries can be used to efficiently retrieve the information from it. For example, Arxiv is a database of articles which allows us to query over it so that we can find relevant articles.
+
+Analogously, an image can be thought of as information-rich source (database) and the question as the query. The attention mechanism will be similar to an information retrieval method that will allow us to find out the relevant regions of the image based on the question.
