@@ -9,13 +9,13 @@ Attention based mechanisms have become quite popular in the field of machine lea
 "Pay attention, it's an important chapter." Ring some bells? We have always been asked to focus on the important part whether it is an examination or a speech. Similar is the concept of attention in machine learning, focussing on the important part. Let's consider a problem -- you are given the following image and asked the question "What is the color of the shirt, the person kicking the ball is wearing?"
 
 <p align="center">
-  <img width="650" height="450" src="/assets/images/football.jpg">
+  <img width="650" height="450" src="https://raw.githubusercontent.com/LearningTurtle/Blog/master/assets/images/football.jpg">
 </p>
 
 You would realize that there are a bunch of regions in the image that are more important to put focus on to answer the question, like shown in the following image. 
 
 <p align="center">
-  <img width="850" height="600" src="/assets/images/football_imp.png">
+  <img width="850" height="600" src="https://raw.githubusercontent.com/LearningTurtle/Blog/master/assets/images/football_imp.jpg">
 </p>
 
 In machine learning we often think of "information" as feature vectors. For a given bunch of feature vectors, attention mechanisms allow us to determine which feature vectors are more relevant to a particular feature vector. The relevance between two vectors can be found using several methods as we later see in this blog. In the mentioned example, if $$q$$ represents the feature vector for the question and $$v_i$$ represent the feature vectors for each of the region $$i$$ in the image, the attention mechanism might help us to determine which regions are more relevant to $$q$$.
