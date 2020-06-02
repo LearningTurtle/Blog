@@ -1,7 +1,9 @@
 ---
 layout: post
-title:  "Attention? An Intuitive Explanation"
+title:  "Attention? Another Perspective!"
+description: An intuitive as well as mathematical explanation to various types of attention mechanisms.
 date:   2020-06-02 15:03:36 +0530
+categories: attention NMT Transformers
 ---
 
 Attention based mechanisms have become quite popular in the field of machine learning. From 3D-Pose Estimation to question answering attention mechanisms have been found quite useful. Let's dive right into what is attention and how has it become such a popular concept in machine learning.
