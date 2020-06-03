@@ -22,7 +22,7 @@ texture:
   search: false
   showNav: true
   showPicker: false
-  disqus_shortname: games
+  disqus_shortname: learning-turtle-1
   navigation:
     - title: home
       url: "/Blog/"
