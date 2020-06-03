@@ -29,6 +29,7 @@ texture:
     - title: About us
       url: "/about.md"
   markdown: kramdown
+  analytics_id: 'UA-168553113-1'
     
 #header_pages:
 # - about.md
