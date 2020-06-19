@@ -9,11 +9,22 @@ title:  ""
 We are budding Developer, Researcher and Educator.
 <br>
 On the quest to  fill the gap of crucial Concept often remain unanswer
+<br>
+<br>
+
 </p>
 
 
-<br>
+<div style="text-align:center;font-size: 30px">
+<b>	
+CONTECT US
+</b>
+
+</div>
+
 <div style="text-align:center;">
+<br>
+
   {% if site.ajaxify_contact_form %}
     <form class="form-stacked">
       <label>
