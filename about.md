@@ -1,7 +1,7 @@
 ---
 
 layout: page
-title:  ""
+title:  about
 
 ---
 <p align="center">
