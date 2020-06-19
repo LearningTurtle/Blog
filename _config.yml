@@ -28,7 +28,7 @@ texture:
     - title: home
       url: "/Blog/"
     - title: About us
-      url: "/Blog/about/"
+      url: "/Blog/about"
   markdown: kramdown
   analytics_id: 'UA-168553113-1'
     
