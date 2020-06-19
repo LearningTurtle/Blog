@@ -14,7 +14,7 @@ sass:
   sass_dir: _sass
 
 permalink: /posts/:title/
-
+permalink:
 texture:
   title: Learning Turtle
   tagline: Slow and steady wins the race 
