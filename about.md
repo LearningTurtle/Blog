@@ -4,17 +4,22 @@ layout: page
 title:  ""
 
 ---
-<p align="center">
+<div >
+  <br>
+<div style="margin-left:100px; margin-right: 100px; ">
 
-We are budding Developer, Researcher and Educator.
+We are Tejas and Nikhil !
+
 <br>
-On the quest to  fill the gap of crucial Concept often remain unanswer
+We are currently Undergrad at IIT, kharagpur
+We are budding Researcher and interested in Educating People about machine learning concepts.<br>
+Here we are documenting about to Intuitive explanation of machine learning concepts.
+<br>
+send us an email on "learningturtleyt@gmail.com"
+</div>
 <br>
 <br>
-
-</p>
-
-
+<br>
 <div style="text-align:center;font-size: 30px">
 <b>	
 CONTECT US
@@ -22,7 +27,7 @@ CONTECT US
 
 </div>
 
-<div style="text-align:center;">
+<div style="text-align:center;font-size:150%;">
 <br>
 
   {% if site.ajaxify_contact_form %}
@@ -68,3 +73,11 @@ CONTECT US
   {% include ajaxify_content_form.html %}
 {% endif %}
 </div>
+<br>
+<br>
+<br>
+<div align="center">
+  <i>
+  © 2020 Learning Turtle
+  </i>
+</div>>
