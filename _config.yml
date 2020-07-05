@@ -14,6 +14,7 @@ sass:
   sass_dir: _sass
 
 permalink: /posts/:title/
+permalink:
 texture:
   title: Learning Turtle
   tagline: Slow and steady wins the race 
@@ -22,13 +23,14 @@ texture:
   search: false
   showNav: true
   showPicker: false
-  disqus_shortname: games
+  disqus_shortname: learning-turtle-1
   navigation:
     - title: home
       url: "/Blog/"
     - title: About us
-      url: "/about.md"
+      url: "/Blog/about"
   markdown: kramdown
+  analytics_id: 'UA-168553113-1'
     
 #header_pages:
 # - about.md

@@ -18,3 +18,4 @@ sitemap:
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
+# function not in use
