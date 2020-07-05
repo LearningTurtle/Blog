@@ -97,7 +97,7 @@ Let's say we have a bunch of feature vectors to represent an entity such as a se
   <img src="https://raw.githubusercontent.com/LearningTurtle/Blog/master/assets/images/selfattention.gif">
 </p>
 <p align="center">
-  <a>Demonstration of self attention mechanism. <a href=https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html>GIF Source</a>: </a>
+  Demonstration of self attention mechanism. <a href=https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html>GIF Source</a>
 </p>
 
 In cases like that of the image and the question, where we wish to find the relevant parts of the image based on the question, the key, value pair (from image) and the query (from question) are obtained from different sources, and the corresponding attention mechanism is called cross-attention.
