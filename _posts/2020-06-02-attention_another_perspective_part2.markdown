@@ -30,4 +30,16 @@ In cases like that of the image and the question, where we wish to find the rele
 
 ### Self-Attention in Different Settings
 
+Understanding what self attention is doesn't bring things into perspective, how self attention mechanism is utilised in various settings is something that we need to study. Let's dive in.
+
+#### Self-Attention in Sentences 
+
+Consider a sentence, "John used a bat to hit a six." We can use a self-attention mechanism to find a contextual representation of each of the word in this sentence. The input to the self-attention method is a sequence of word embeddings representing the sequence of words in this sentence. Let's try to demystify, how can we obtain a contextual representation for the word "bat."
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LearningTurtle/Blog/master/assets/images/selfattention.png">
+</p>
+
+Firstly, the word embeddings are projected into respective query, key and value triplets. The query of the word "bat" interacts with the key of each of the words (including "bat" itself) to find the relevance of "bat" with all the words in the sequence. The relevance is a single number between 0 and 1 (after the softmax operation). Usually, a weighted sum (where weights = relevances) of values corresponding to each of the words is taken to obtain the target vector.
+
 [1]: https://learningturtle.github.io/Blog/
