@@ -100,5 +100,36 @@ Cross-Attention mechanisms are popular in multi-modal learning, where a decision
 
 ### Cross-Attention in Visual Question Answering
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LearningTurtle/Blog/master/assets/images/cross_expl.png">
+</p>
+
+First of all, features are extracted from both the image and the question. Region level features for image can be extracted using networks like Faster-RCNN. For question (textual) features, an LSTM or an attention based method like transformer (which we shall discuss later) can be used. The feature vector for question acts as the query and the key, value pairs can be obtained by projecting region features.
+
+The attention mechanism returns a single vector containing the relevance scores for each of the regions. A weighted sum can be taken to find the target vector containing the representation of image with relevant features. Usually, this target vector is transformed using a multi-layered perceptron to find the final representation of the image. The final representation of the image combined with the question features can then be used to answer the question.
+
+Mathematically, for $$N$$, regions each with a feature vector of size $$d_v$$, combinedly represented as $$\mathbb{v} \in \mathbb{R}^{N \times d_v}$$ and a question with feature vector $$q \in \mathbb{R}^{d}$$,
+
+$$\textbf{key:	} f(\mathbb{v}) = \mathbb{W}_f\mathbb{v}$$
+
+$$\textbf{value:	} g(\mathbb{v}) = \mathbb{W}_g\mathbb{v}$$
+
+Where $$W_f$$ and $$W_g$$ are chosen such that the resulting vector has a dimension $$d$$. A relevance function $$O$$ which can be either dot product or additive attention function is used to find the relevance of each region.
+
+$$\mathbb{\alpha} = O(f(\mathbb{v}), q)$$
+
+$$\mathbb{v}' = \mathbb{\alpha}^Tg(\mathbb{v})$$
+
+$$\mathbb{v}'$$ is the final representation of image that contains the features relevant to the question.
+
+In the next part of this series, we will look into the details of multi-head attention and graph attention networks.
+
+## References
+
+1. [Zhang, H., Goodfellow, I., & Metaxas, A. (2018). Self-Attention Generative Adversarial Networks arXiv e-prints, arXiv:1805.08318.][2]
+2. [Agrawal, A., Lu, J., Antol, M., Zitnick, C., & Batra, D. (2015). VQA: Visual Question Answering arXiv e-prints, arXiv:1505.00468.][3]
+
+
 [1]: https://learningturtle.github.io/Blog/
 [2]: https://arxiv.org/pdf/1805.08318.pdf
+[3]: https://arxiv.org/pdf/1505.00468.pdf
