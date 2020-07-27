@@ -87,6 +87,11 @@ In the next part of this series, we will learn about the different types of atte
 
 ## References
 
+1. [Vaswani, A., Shazeer, N., Parmar, J., Jones, L., Gomez, L., & Polosukhin, I. (2017). Attention Is All You Need arXiv e-prints, arXiv:1706.03762.][1]
+2. [Bahdanau, D., Cho, K., & Bengio, Y. (2014). Neural Machine Translation by Jointly Learning to Align and Translate arXiv e-prints, arXiv:1409.0473.][2]
+3. [Luong, M.T., Pham, H., & Manning, C. (2015). Effective Approaches to Attention-based Neural Machine Translation arXiv e-prints, arXiv:1508.04025.][3]
+
+
 [1]: https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf
 [2]: https://arxiv.org/abs/1409.0473
 [3]: https://arxiv.org/pdf/1508.04025.pdf
