@@ -38,9 +38,26 @@ Consider a sentence, "John used a bat to hit a six." We can use a self-attention
   <img src="https://raw.githubusercontent.com/LearningTurtle/Blog/master/assets/images/selfattention.png">
 </p>
 
-Firstly, the word embeddings are projected into respective query, key and value triplets. The projection matrices are shared across words, allowing sequences of varying lengths. The query of the word *bat* interacts with the key of each of the words (including *bat* itself) to find the relevance of *bat* with all the words in the sequence. The relevance is a single number between 0 and 1 (after the softmax operation). Usually, a weighted sum (where weights = relevances) of values corresponding to each of the words is taken to obtain the target vector, and the target vector is transformed using a few linear layers with activation functions to obtain the updated representation for the word *bat*. This updated representation is often referred to as the contextual representation. The contextual representations are parallely calculated for each of the words in the sequence.
+Firstly, the word embeddings are projected into respective query, key and value triplets. The projection matrices are shared across words, allowing sequences of varying lengths. The query of the word $$bat$$ interacts with the key of each of the words (including $$bat$$ itself) to find the relevance of $$bat$$ with all the words in the sequence. The relevance is a single number between 0 and 1 (after the softmax operation). Usually, a weighted sum (where weights = relevances) of values corresponding to each of the words is taken to obtain the target vector, which can be transformed using linear layers (or in general any suitable projection) to obtain the updated representation for the word $$bat$$. This updated representation is often referred to as the contextual representation. The contextual representations are parallely calculated for each of the words in the sequence.
 
-In summary, the input to the attention mechanism is a sequence of embeddings, one for each of the words, and the output is the contextual representation for each of the words. It is interesting to see, how the contextual representation is better than just a transformation using fully connected layers. The word *bat* can have several meanings for example the bird or as the verb to refer to the action of batting. The context however constrains the meaning to a cricket bat.
+Mathematically, for a sequence of words $$\mathbb{x}$$,
+
+$$\textbf{key:	} f(\mathbb{x}) = W_f\mathbb{x}$$
+
+$$\textbf{query:	} g(\mathbb{x}) = W_g\mathbb{x}$$
+
+$$\textbf{value:	} h(\mathbb{x}) = W_h\mathbb{x}$$
+
+Where, $$W_f$$, $$W_g$$ and $$W_h$$ are projection layers shared across words. Assuming that the relevance scores are calculated using dot-product attention,
+
+$$\alpha_{i,j} = \mathrm{softmax}(f(x_i)^Tg(x_j))$$
+
+$$o_j = W_v\left(\displaystyle\sum_{i=1}^{N}\alpha_{i,j}h(x_i)\right)$$
+
+$$o_j$$ is the contextual representation of $$j$$th word in the sequence.
+
+
+It is interesting to see, how the contextual representation is better than just a transformation using fully connected layers. The word $$bat$$ can have several meanings for example the bird or as the verb to refer to the action of batting. The context however constrains the meaning to a cricket bat.
 
 __Self-Attention for Image Features__ 
 
@@ -66,10 +83,22 @@ $$\alpha_{i,j} = \mathrm{softmax}(f(x_i)^Tg(x_j))$$
 
 $$o_j = \mathbb{W}_v\left(\displaystyle\sum_{i=1}^{N}\alpha_{i,j}h(x_i)\right)$$
 
+Features captured by a single feature map might make more sense when viewed with features captured by other feature maps. Self-attention helps to find feature representations that are aware of features captured by other feature maps. In this way, attention methods in images help to capture global dependencies in images. 
+
 
 ### Cross-Attention: An Overview
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LearningTurtle/Blog/master/assets/images/crossattention.png">
+</p>
 
+Suppose you have an image and a question related to the image. The image is a rich source of information and can be used to answer a lot of questions, however, a single question might require only a chunk of information from the image to be answered. The question is required to find out the relevant regions from the image that can help to find it's answer. 
+
+You can use an attention mechanism to find the relevant regions. The query for the attention mechanism can be derived from the question and the key, value pairs from the image. Because of different sources of query and key, value pairs, the attention mechanism is called cross-attention.
+
+Cross-Attention mechanisms are popular in multi-modal learning, where a decision is made on basis on inputs belonging to different modalities, often vision and language. Visual Question Answering is one of the established tasks in vision and language multi-modal learning. Others include visual commonsense reasoning, referring expression comprehension and visual entailment. Next, we see an example of cross attention for visual question answering. This should help in provinding a better insight on how are these mechanisms utilised and what advantages do they offer.
+
+### Cross-Attention in Visual Question Answering
 
 [1]: https://learningturtle.github.io/Blog/
 [2]: https://arxiv.org/pdf/1805.08318.pdf
