@@ -82,6 +82,10 @@ where $$d_q = d_k$$. Vaswani et. al in [Attention is all you need][1] proposed a
 $$\alpha_{ij} = \frac{q_i \cdot k_j}{\sqrt{d_k}}$$
 
 
+In the next part of this series, we will learn about the different types of attention mechanisms classified on multiple bases. We will look into the detail of self and cross attention mechanisms.
+
+
+## References
 
 [1]: https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf
 [2]: https://arxiv.org/abs/1409.0473
