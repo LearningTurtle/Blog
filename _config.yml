@@ -36,7 +36,7 @@ texture:
   # generate social links in footer
   social_links:
     twitter:
-    github: https://github.com/LearningTurtle 
+    github: LearningTurtle 
 #    linkedIn: in/thelehhman
     rss: rss
  
