@@ -3,6 +3,7 @@ layout: post
 title:  "Attention? An Other Perspective! [Part 2]"
 description: Categorisation of attention mechanisms and explanation of self and cross attention mechanisms.
 date:   2020-06-03 15:03:36 +0530
+author: Nikhil Shah
 ---
 
 In the [previous part][1] of this series, we looked at an intuitive explanation of attention mechanisms and how to determine relevance between two feature vectors. Next, we classify attention mechanisms and study the types in detail. 
