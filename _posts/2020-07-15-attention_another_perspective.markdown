@@ -2,7 +2,7 @@
 layout: post
 title:  "Attention? An Other Perspective! [Part 1]"
 description: An intuitive as well as mathematical explanation to attention mechanisms in machine learning.
-date:   2020-06-02 15:03:36 +0530
+date:   2020-07-15 15:03:36 +0530
 author: Nikhil Shah
 ---
 
