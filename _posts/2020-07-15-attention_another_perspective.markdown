@@ -3,6 +3,7 @@ layout: post
 title:  "Attention? An Other Perspective! [Part 1]"
 description: An intuitive as well as mathematical explanation to attention mechanisms in machine learning.
 date:   2020-07-15 15:03:36 +0530
+categories: [Dot Product Attention, Additive Attention]
 author: Nikhil Shah
 ---
 
@@ -91,6 +92,23 @@ In the next part of this series, we will learn about the different types of atte
 1. [Vaswani, A., Shazeer, N., Parmar, J., Jones, L., Gomez, L., & Polosukhin, I. (2017). Attention Is All You Need arXiv e-prints, arXiv:1706.03762.][1]
 2. [Bahdanau, D., Cho, K., & Bengio, Y. (2014). Neural Machine Translation by Jointly Learning to Align and Translate arXiv e-prints, arXiv:1409.0473.][2]
 3. [Luong, M.T., Pham, H., & Manning, C. (2015). Effective Approaches to Attention-based Neural Machine Translation arXiv e-prints, arXiv:1508.04025.][3]
+
+---
+
+### Cited as:
+
+```bibtex
+@article{nikhil_attention,
+	title={Attention! An Other Perspective},
+	url={https://learningturtle.github.io/Blog/posts/attention_another_perspective/},
+	journal={Learning Turtle},
+	author={Nikhil},
+	year={2020}
+}
+```
+### Postscript
+
+If you find any mistakes/complicacies in our blogs or if you have any suggestions/feedback, do not hesitate to contact us at [learningturtle.yt@gmail.com](mailto:learningturtle.yt@gmail.com).
 
 
 [1]: https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf

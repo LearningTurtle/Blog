@@ -3,6 +3,7 @@ layout: post
 title:  "Attention? An Other Perspective! [Part 2]"
 description: Categorisation of attention mechanisms and explanation of self and cross attention mechanisms.
 date:   2020-07-25 15:03:36 +0530
+categories: [Self Attention, Cross Attention]
 author: Nikhil Shah
 ---
 
@@ -129,6 +130,23 @@ In the next part of this series, we will look into the details of multi-head att
 
 1. [Zhang, H., Goodfellow, I., & Metaxas, A. (2018). Self-Attention Generative Adversarial Networks arXiv e-prints, arXiv:1805.08318.][2]
 2. [Agrawal, A., Lu, J., Antol, M., Zitnick, C., & Batra, D. (2015). VQA: Visual Question Answering arXiv e-prints, arXiv:1505.00468.][3]
+
+---
+
+### Cited as:
+
+```bibtex
+@article{nikhil_attention,
+	title={Attention! An Other Perspective},
+	url={https://learningturtle.github.io/Blog/posts/attention_another_perspective_part2/},
+	journal={Learning Turtle},
+	author={Nikhil},
+	year={2020}
+}
+```
+### Postscript
+
+If you find any mistakes/complicacies in our blogs or if you have any suggestions/feedback, do not hesitate to contact us at [learningturtle.yt@gmail.com](mailto:learningturtle.yt@gmail.com).
 
 
 [1]: https://learningturtle.github.io/Blog/posts/attention_another_perspective/

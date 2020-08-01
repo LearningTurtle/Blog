@@ -3,6 +3,7 @@ layout: post
 title:  "Attention? An Other Perspective! [Part 3]"
 description: An explanation of soft and hard attention mechanisms.
 date:   2020-07-31 15:03:36 +0530
+categories: [Soft Attention, Hard Attention]
 author: Nikhil Shah
 ---
 
@@ -57,6 +58,24 @@ Experiments performed in [Xu et al. (2015)][3] demonstrate that hard-attention p
 1. [Bahdanau, D., Cho, K., & Bengio, Y. (2014). Neural Machine Translation by Jointly Learning to Align and TranslatearXiv e-prints, arXiv:1409.0473.][2]
 
 2. [Xu, K., Ba, J., Kiros, R., Cho, A., Salakhutdinov, R., & Zemel, Y. (2015). Show, Attend and Tell: Neural Image Caption Generation with Visual AttentionarXiv e-prints, arXiv:1502.03044.][3]
+
+---
+
+### Cited as:
+
+```bibtex
+@article{nikhil_attention,
+	title={Attention! An Other Perspective},
+	url={https://learningturtle.github.io/Blog/posts/attention_another_perspective_part3/},
+	journal={Learning Turtle},
+	author={Nikhil},
+	year={2020}
+}
+```
+### Postscript
+
+If you find any mistakes/complicacies in our blogs or if you have any suggestions/feedback, do not hesitate to contact us at [learningturtle.yt@gmail.com](mailto:learningturtle.yt@gmail.com).
+
 
 [1]: https://en.wikipedia.org/wiki/Categorical_distribution
 [2]: https://arxiv.org/abs/1409.0473
