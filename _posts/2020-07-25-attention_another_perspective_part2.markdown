@@ -16,7 +16,7 @@ In the [previous part][1] of this series, we looked at an intuitive explanation 
 
 ## Self-Attention and Cross-Attention
 
-Self and Cross are loosely defined terms to associated to the attention mechanisms when the query and the key, value pair are obtained from the same and different "sources" respectively.
+Self and Cross are loosely defined terms associated to the attention mechanisms when the query and the key, value pair are obtained from the same and different "sources" respectively.
 
 ### Self-Attention: An Overview
 
@@ -131,6 +131,6 @@ In the next part of this series, we will look into the details of multi-head att
 2. [Agrawal, A., Lu, J., Antol, M., Zitnick, C., & Batra, D. (2015). VQA: Visual Question Answering arXiv e-prints, arXiv:1505.00468.][3]
 
 
-[1]: https://learningturtle.github.io/Blog/
+[1]: https://learningturtle.github.io/Blog/posts/attention_another_perspective/
 [2]: https://arxiv.org/pdf/1805.08318.pdf
 [3]: https://arxiv.org/pdf/1505.00468.pdf
