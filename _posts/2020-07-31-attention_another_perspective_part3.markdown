@@ -2,7 +2,7 @@
 layout: post
 title:  "Attention? An Other Perspective! [Part 3]"
 description: An explanation of soft and hard attention mechanisms.
-date:   2020-07-22 15:03:36 +0530
+date:   2020-07-31 15:03:36 +0530
 author: Nikhil Shah
 ---
 
