@@ -17,7 +17,7 @@ texture:
   tagline: Slow and steady wins the race 
   date_format: "%b %-d, %Y"
   style: red
-  search: true
+  search: false
   showNav: true
   showPicker: false
   disqus_shortname: learning-turtle-1
