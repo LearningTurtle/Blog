@@ -20,7 +20,7 @@ texture:
   search: false
   showNav: true
   showPicker: false
-  disqus_shortname: learning-turtle-1
+  disqus_shortname: learning-turtle
   navigation:
     - title: Home
       url: "/Blog/"
