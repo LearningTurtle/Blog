@@ -77,7 +77,7 @@ Where $$\alpha_{ij}^k$$ is the relevance score between the node $$i$$ and $$j$$ 
 <p align="center">
   <img src="https://raw.githubusercontent.com/LearningTurtle/Blog/master/assets/images/multiheadgraphconv.png">
   <br>
-  <a> Fig 2: The process depicted in Fig 2 is replicated K times for the multi-headed variation. Here K=3.</a>
+  <a> Fig 3: The process depicted in Fig 2 is replicated K times for the multi-headed variation. Here K=3.</a>
 </p>
 
 Although, the idea for using multiple heads is inspired from [Vaswani et al.][3], the execution is slightly different. [Vaswani et al.][3] divided every input feature vector into $$K$$ chunks where $$K$$ is the number of heads, and self-attention was individually applied over each chunk, whereas in GATs, every node feature is copied $$K$$ times, and then the attention mechanism is individually applied over each copy.
