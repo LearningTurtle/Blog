@@ -11,6 +11,7 @@ In the [previous post][1], we studied multi-headed attention mechanisms. In this
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/LearningTurtle/Blog/master/assets/images/gnn_popularity.png">
+  <br>
   Picture Source: <a href="https://twitter.com/srush_nlp/status/1289311254167924736/photo/1">@srush_nlp</a>
 </p>
 
@@ -29,6 +30,7 @@ A graph can be arbitrarily large, therefore, to keep the total number of paramet
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/LearningTurtle/Blog/master/assets/images/graphconv.png">
+  <br>
   <a> Fig 1: A rough sketch of the desirable form of the solution, shown for a single node </a>
 </p>
 
@@ -48,6 +50,7 @@ Prior to the GATs, most of the work done on graph covolution networks specified 
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/LearningTurtle/Blog/master/assets/images/graphconvfinal.png">
+  <br>
   <a> Fig 2: A depiction of the graph convolution operator.</a>
 </p>
 
@@ -73,7 +76,8 @@ Where $$\alpha_{ij}^k$$ is the relevance score between the node $$i$$ and $$j$$ 
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/LearningTurtle/Blog/master/assets/images/multiheadgraphconv.png">
-  <a> Fig 2: The process depicted in Fig 1 is replicated K times for the multi-headed variation. Here K=3.</a>
+  <br>
+  <a> Fig 2: The process depicted in Fig 2 is replicated K times for the multi-headed variation. Here K=3.</a>
 </p>
 
 Although, the idea for using multiple heads is inspired from [Vaswani et al.][3], the execution is slightly different. [Vaswani et al.][3] divided every input feature vector into $$K$$ chunks where $$K$$ is the number of heads, and self-attention was individually applied over each chunk, whereas in GATs, every node feature is copied $$K$$ times, and then the attention mechanism is individually applied over each copy.
